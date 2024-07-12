@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Jawa Barat | Indonesia</title>
+    <nav>
+      <div class="layar-dalam">
+        <div class="logo">
+          <a href=""><img src="gambar/logo-white.png" class="putih" /></a>
+        </div>
+        <div class="menu">
+          <a href="" class="tombol-menu">
+            <span class="gambar"></span>
+            <span class="gambar"></span>
+            <span class="gambar"></span>
+          </a>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="kontak.html">kontak</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="layar-penuh">
+      <header id="home">
+        <div class="overlay"></div>
+        <video autoplay muted loop>
+          <source src="gambar/video-indonesia.mp4" type="video/mp4" />
+        </video>
+        <div class="intro">
+          <h3>JAWA BARAT</h3>
+          <p>
+            Mulai perjalanan terbaik ada bersama kami disini?
+          </p>
+        </div>
+      </header>
+    <style>
+        /* CSS untuk styling header */
+        * {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  font-size: 15px;
+}
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.layar-dalam {
+  width: 1000px;
+  margin: auto;
+}
+.layar-penuh {
+  width: 100%;
+}
+nav {
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  border-bottom: 1px solid #b1b1b1;
+  line-height: 60px;
+  width: 100%;
+  transition: background-color 0.5s ease;
+}
+nav.putih {
+  background-color: #fff;
+}
+nav .logo {
+  float: left;
+  position: relative;
+  line-height: 55px;
+  text-align: center;
+}
+nav .logo img {
+  vertical-align: middle;
+  width: 120px;
+}
+
+nav .menu {
+  float: right;
+  height: 60px;
+  max-width: 600px;
+}
+
+nav .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav .menu ul li {
+  list-style-type: none;
+  float: left;
+  line-height: 60px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* pengaturan header */
+header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -2;
+}
+header .intro {
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 50%;
+}
+header .intro h3 {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+.tombol {
+  background-color: #000000;
+  height: 40px;
+  line-height: 42px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 20px 0px 20px;
+  font-size: 15px;
+  border-radius: 4px;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 50%;
+  z-index: -1;
+}
+.tombol-menu {
+  position: absolute;
+  top: 1.7rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+.tombol-menu .garis {
+  height: 3px;
+  background-color: #fff;
+}
+section {
+  padding: 50px 0px 50px 0px;
+}
+section h3 {
+  font-size: 30px;
+}
+section h3::after {
+  content: "";
+  border-bottom: 5px solid #c86b85;
+  width: 52px;
+  display: block;
+  margin: 20px auto;
+        }
+
+        /* CSS untuk styling galeri */
+        .row-galeri{
+                 box-sizing: border-box;
+                 background-color: #eee;
+                padding: 15px;
+                }
+        .galeri{
+                margin: 0px auto;
+                padding-top:5px;
+                min-height: 500px;
+                width: 1200px;
+                background-color: #eee;
+                overflow: auto;
+                }
+        .thumbnail{
+                background-color: white;
+                text-align: center;
+                padding: 10px;
+                width: 360px;
+                margin: 10px;
+                float: left;
+                }
+        .thumbnail img{
+                width: 100%;
+                }
+        .thumbnail h2{
+                margin-bottom: -10px;
+                }
+        .thumbnail button{
+                margin-top: -10px;
+                background-color: transparent;
+                color: black;
+                padding: 5px 30px;
+                border: 2px solid black;
+                border-radius: 30px;
+                cursor: pointer;
+                }
+        .thumbnail button:hover{
+                border: 2px solid #28377f;
+                background-color: #28377f;
+                color:white;
+                }
+@media screen and (max-width: 600px) {
+    ul.topnav li.left,
+    ul.topnav li,
+        .pic{float:none;}
+        .tentang,
+        .galeri{width: 100%;}
+        .tentang img,
+        .tentang p{margin: 20px;}
+        .thumbnail{margin-left: 35px;}
+        .pic{margin-left: 55px;}
+        .pendaftaran h1,
+        .form{width: 400px; margin-left: 20px;}
+
+        html,
+        body {max-width: 100%; overflow-x: hidden;}
+}
+    </style>
+</head>
+<body>
+    <header>
+      <div class="row-galeri">
+        <div class="galeri" id=”galeri”>
+        <h1 align="center">Destinasi wisata</h1>
+        <hr style="width: 50%">
+    <div class="thumbnail">
+        <img src="gambar/foto1.jpg" width="350" height="200">
+        <h2>Kawah Ratu</h2>
+        <p>Bandung</p>
+        <button><li><a href="https://id.wikipedia.org/wiki/Kawah_Ratu#:~:text=Kawah%20Ratu%20berbentuk%20seperti%20Mangkuk,dan%20Kawah%20Ratu%20(tua).">Telusuri</a></li></a></button>
+    </div>
+    <div class="thumbnail">
+        <img src="gambar/foto2.jpg" width="350" height="200">
+        <h2>Pantai Batu Karas</h2>
+        <p>Pangandaran</p>
+        <button><li><a href="https://id.wikipedia.org/wiki/Pantai_Batu_Karas">Telusuri</a></li></a></button>
+    </div>
+    <div class="thumbnail">
+        <img src="gambar/foto3.jpg" width="350" height="200">
+        <h2>Green Canion</h2>
+        <p>Ciamis</p>
+        <button><li><a href="https://id.wikipedia.org/wiki/Cukang_Taneuh">Telusuri</a></li></a></button>
+    </div>
+        </div>
+        <!-- Tambahkan lebih banyak gambar sesuai kebutuhan -->
+</body>
+</html>
